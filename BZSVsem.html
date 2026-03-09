@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54X2G0K93V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-54X2G0K93V');
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type='text/javascript'>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+  <title>Seminar on Relative Langlands Duality</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  body{
+  padding: 1em;
+}
+.page{
+  max-width: 60em;
+  margin: 0 auto;
+}
+table th,
+table td{
+  text-align: left;
+}
+table.layout{
+  width: 100%;
+  border-collapse: collapse;
+        font: LAT;
+}
+table.display{
+  margin: 1em 0;
+        font: LAT;
+}
+table.display th,
+table.display td{
+  border: 1px solid #B3BFAA;
+  padding: .5em 1em;
+        font: LAT;
+}
+
+table.display th{ background: #B2DDF9; }
+table.display td{ background: #fff; }
+
+
+table.responsive-table2{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 30em){
+    table.responsive-table2{
+      box-shadow: none;  
+        font: LAT;
+    }
+    table.responsive-table2 thead{
+      display: none; 
+        font: LAT;
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+        font: LAT;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+        font: LAT;
+    content: 'Date';
+  }
+  table.responsive-table td:nth-child(2):before{
+        font: LAT;
+    content: 'Topic';
+  }
+  table.responsive-table td:nth-child(3):before{
+        font: LAT;
+    content: 'Textbook';
+  }
+  table.responsive-table td:nth-child(4):before{
+        font: LAT;
+    content: 'Note';
+  }
+  table.responsive-table2 td:nth-child(1),
+  table.responsive-table2 td:nth-child(2),
+  table.responsive-table2 td:nth-child(3),
+  table.responsive-table2 td:nth-child(4){
+        font: LAT;
+    padding-left: 25%;
+  }
+  table.responsive-table2 td:nth-child(1):before,
+  table.responsive-table2 td:nth-child(2):before,
+  table.responsive-table2 td:nth-child(3):before,
+  table.responsive-table2 td:nth-child(4):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+        font: LAT;
+  }
+  
+    table.responsive-table2 tr,
+    table.responsive-table2 td{
+        display: block;
+        font: LAT;
+    }
+    table.responsive-table2 tr{
+        position: relative;
+        margin-bottom: 1em;
+        font: LAT;
+    box-shadow: 0 1px 10px #B2DDF9;
+    }
+    table.responsive-table2 td{
+        border-top: none;
+        font: LAT;
+    }
+    table.responsive-table2 td.organisationnumber2{
+        background: #B2DDF9;
+        border-top: 1px solid #B3BFAA;
+    }
+    table.responsive-table2 td.actions2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+table.responsive-table{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 30em){
+    table.responsive-table{
+      box-shadow: none;  
+        font: LAT;
+    }
+    table.responsive-table thead{
+      display: none; 
+        font: LAT;
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+        font: LAT;
+  }
+    
+  table.responsive-table2 td:nth-child(1):before{
+        font: LAT;
+    content: 'Assignment';
+  }
+  table.responsive-table2 td:nth-child(2):before{
+        font: LAT;
+    content: 'Due';
+  }
+  table.responsive-table2 td:nth-child(3):before{
+        font: LAT;
+    content: 'Due';
+  }
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2),
+  table.responsive-table td:nth-child(3),
+  table.responsive-table td:nth-child(4){
+        font: LAT;
+    padding-left: 25%;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before,
+  table.responsive-table td:nth-child(3):before,
+  table.responsive-table td:nth-child(4):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+        font: LAT;
+  }
+  
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+        font: LAT;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+        font: LAT;
+    box-shadow: 0 1px 10px #B2DDF9;
+    }
+    table.responsive-table td{
+        border-top: none;
+        font: LAT;
+    }
+    table.responsive-table td.organisationnumber{
+        background: #B2DDF9;
+        border-top: 1px solid #B3BFAA;
+    }
+    table.responsive-table td.actions{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+    #block_container{
+    	display: flex;
+    	justify-content: left;
+    }
+    @font-face{
+	font-family: 'BV';
+	src: url('LibreBaskerville-Regular.woff') format('woff'),
+	url('LibreBaskerville-Regular.ttf') format('truetype');
+    }
+    @font-face{
+	font-family: 'LAT';
+	src: url('Lato-Regular.woff') format('woff'),
+	url('Lato-Regular.ttf') format('truetype');
+    }
+    @font-face{
+	font-family: 'LATBold';
+	src: url('Lato-Bold.woff') format('woff'),
+	url('Lato-Bold.ttf') format('truetype');
+    }
+    .container{overflow-wrap: break-word; word-break: break-all;
+    }
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 36.0px BV; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; hyphens: manual; white-space:normal}
+    p.p2tab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p20tabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p20tab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p2tab.bold {font: LATBold;}
+    p.p2tab2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2tab23 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2tab3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:60px; hyphens: manual; white-space:normal}
+    p.p20tab2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; white-space:nowrap}
+    p.p20Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; white-space:nowrap; margin-left:20px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 21.6px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p3w {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 21.6px LAT; color: white; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.6px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p50 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 5.0px; font: 1px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 5.0px}
+    p.p2Boldtab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LATBold; color: #000000; -webkit-text-stroke: #000000; margin-left: 0px; min-height: 14.0px; white-space:nowrap}
+    p.p5tab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:20px; margin-top:7px}
+    p.p5tabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:27px; margin-top:7px}
+    p.p5tabtabBold {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:27px; margin-top:7px}
+    p.p5tabtabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:48px; margin-top:7px}
+    p.p5Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5B {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 18.0px BV; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 19.8px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    
+    div{
+    overflow-wrap:break-word;
+    hyphens:manual;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container"><br><br>
+<p class="p1">Seminar on Relative Langlands Duality</p>
+<br>
+<div id="block_container"><p class="p2Bold">Organizer</p>
+<p class="p2tab">Gyujin Oh, Qiao He + the help of others (may step up later as co-organizers)</p></div>
+<div id="block_container"><p class="p2Bold">Time</p>
+<p class="p2tab">Wednesdays 2:15PM-3:45PM, with occasionally different start times (always a subset of 1:30-4PM).</p></div>
+<div id="block_container"><p class="p2Bold">Location</p>
+<p class="p2tab">Room 528.</p></div>
+<div id="block_container"><p class="p2Bold">Syllabus</p>
+<p class="p2tab">To come soon.</p></div>
+<br>
+ <div style="line-height:60%;">
+</div>
+<p class="p2Boldtab">About the seminar</p>
+<p class="p5tabtab">We aim to understand the recent preprint of Ben-Zvi, Sakellaridis, and Venkatesh on the <a href="https://www.math.ias.edu/~akshay/research/BZSVpaperV1.pdf">Relative Langlands Duality</a>.
+</p>
+<p class="p5tabtab">The integral representations of $L$-functions have been one of the central themes in the study of periods of automorphic forms, which provide a link between the numerical invariants arising from the automorphic side (automorphic periods) and the Galois side ($L$-functions). Furthermore, the nonvanishing of the automorphic periods is expected to be related to the characterization of the images of the Langlands functorial lifts. Although the results of this sort have been abundant in the literature for a long time, the unifying theory has only been recently proposed by <a href="https://www.math.ias.edu/~akshay/research/BZSVpaperV1.pdf">[BZSV]</a>, built on the prior work of the authors (in particular <a href="https://arxiv.org/abs/1203.0039">[SV]</a>) through their physics-inspired point of view.
+</p>
+<p class="p5tabtab">In their proposal, the automorphic periods and the $L$-functions are extracted in a symmetric way, that the automorphic periods for $G$ and the $L$-functions for $L$-parameters valued in $\check{G}$ are extracted from certain Hamiltonian $G$-spaces $M$ and Hamiltonian $\check{G}$-spaces $\check{M}$, respectively. The symmetry in the picture suggests that there must be a dual theorem on periods, switching the roles of $(G,M)$ and $(\check{G},\check{M})$.
+</p>
+<p class="p5tabtab">Through this seminar, we aim to understand this picture in relation to the existing phenomenon in the theory of automorphic periods, and also aim to understand what the viewpoint suggests in other contexts.</p>
+<p class="p5tabtab"></p>
+<p class="p2Boldtab">Schedule (Tentative)</p><p class="p5tabtab">1/24, 2:30-3PM (Gyujin).</p>
+<p class="p5tabtabtab">Organizational meeting.</p>
+<p class="p5tabtab">1/31, 2:15-3:45PM (Avi Zeff).</p>
+<p class="p5tabtabtab">Dual groups of spherical varieties (supplemented by the video lecture of the same title by Sug Woo Shin)</p>
+<p class="p5tabtab">2/7, 2:15-3:45PM (Qiao He).</p>
+<p class="p5tabtabtab">Local and global conjectures on automorphic periods (supplemented by the video lecture of the same title by Sug Woo Shin)</p>
+<p class="p5tabtab">2/14, 2:15-3:45PM (Qiao He).</p>
+<p class="p5tabtabtab">Local and global conjectures on automorphic periods (supplemented by the video lecture of the same title by Sug Woo Shin)</p>
+<p class="p5tabtab">2/28, 2:15-3:45PM (Gyujin Oh).</p>
+<p class="p5tabtabtab">Plancherel density; local relative characters; asymptotic and Bernstein morphisms; Local unramified conjecture of [BZSV].</p>
+<p class="p5tabtab">3/6, 2:15-3:45PM (Gyujin Oh).</p>
+<p class="p5tabtabtab">Factorization of automorphic periods; relative trace formula, transfer and quantization.</p>
+<p class="p5tabtab">3/27, 10:30-11:30AM (Peter Woit).</p>
+<p class="p5tabtabtab">Lectures on geometric quantization and Hamiltonians.</p>
+<p class="p5tabtab">3/27, 2:15-3:45PM (Avi Zeff).</p>
+<p class="p5tabtabtab">Hyperspherical varieties and their structure theorem ([BZSV] Chapters 3-5).</p>
+<p class="p5tabtab">4/3, 2:15-3:45PM (Ivan Zelich).</p>
+<p class="p5tabtabtab">Derived geometric Satake equvialence, shearing ([BZSV] Chapter 6).</p>
+<p class="p5tabtab">4/10, 2:15-3:45PM (David Marcil).</p>
+<p class="p5tabtabtab">Plancherel algebras ([BZSV] Chapters 8-9).</p>
+<p class="p5tabtab">4/17, 2:15-3:45PM (Gyujin Oh).</p>
+<p class="p5tabtabtab">Period sheaves ([BZSV] Chapter 10).</p>
+<p class="p5tabtab">4/24, 2:15-3:45PM (Michael Harris, TBC).</p>
+<p class="p5tabtabtab">$L$-sheaves ([BZSV] Chapter 11).</p>
+<p class="p5tabtab">We may have a handful more talks in May, or choose to continue in the fall with more advanced talks.</p>
+<!--<p class="p5tabtabtab">Global duality ([BZSV] Chapters 12-14).</p>-->
+<p class="p5tabtab"></p>
+<p class="p2Boldtab">References</p>
+<p class="p5tabtabBold">Main references</p>
+<p class="p5tabtabtab">[SV] Yiannis Sakellaridis, Akshay Venkatesh, <a href="https://arxiv.org/abs/1203.0039">Periods and harmonic analysis on spherical varieties.</a></p>
+<p class="p5tabtabtab">[BZSV] David Ben-Zvi, Yiannis Sakellaridis, Akshay Venkatesh, <a href="https://www.math.ias.edu/~akshay/research/BZSVpaperV1.pdf">Relative Langlands duality.</a></p>
+<p class="p5tabtabBold">Auxiliary references</p>
+<p class="p5tabtabtab">[B] Joseph Bernstein, <a href="http://www.math.tau.ac.il/~bernstei/Publication_list/publication_texts/Ber-Plancherel-JGF.pdf">On the support of Plancherel measure.</a></p>
+<p class="p5tabtabtab">[BK] Alexander Braverman, David Kazhdan, <a href="https://link.springer.com/chapter/10.1007/978-3-0346-0422-2_9">$\gamma$-functions of Representations and Lifting.</a></p>
+<p class="p5tabtabtab">[S1] Yiannis Sakellaridis, <a href="https://arxiv.org/abs/math/0606130">On the unramified spectrum of spherical varieties over $p$-adic fields.</a></p>
+<p class="p5tabtabtab">[S2] Yiannis Sakellaridis, <a href="https://arxiv.org/abs/0905.4244">Spherical functions on spherical varieties.</a></p>
+<p class="p5tabtabtab">[S3] Yiannis Sakellaridis, <a href="https://arxiv.org/abs/0905.4245">Spherical varieties and integral representations of $L$-functions.</a></p>
+<p class="p5tabtabtab">[GG] Wee Teck Gan, Raul Gomez, <a href="https://arxiv.org/abs/1111.6694">A Conjecture of Sakellaridis--Venkatesh on the Unitary Spectrum of Spherical Varieties.</a></p>
+<p class="p5tabtabtab">[BNS] Alexis Bouthier, Ngo Bao Chau, Yiannis Sakellaridis, <a href="https://arxiv.org/abs/1412.6174">On the formal arc space of a reductive monoid.</a></p>
+<p class="p5tabtabtab">[S4] Yiannis Sakellaridis, <a href="https://arxiv.org/abs/1610.06202">Plancherel decomposition of Howe duality and Euler factorization of automorphic functionals.</a></p>
+<p class="p5tabtabtab">[GW] Wee Teck Gan, Xiaolei Wan, <a href="https://arxiv.org/abs/1905.13502">Relative character identities and theta correspondence.</a></p>
+<p class="p5tabtabtab">[SW] Yiannis Sakellaridis, Jonathan Wang, <a href="https://arxiv.org/abs/2009.03943">Intersection complexes and unramified $L$-factors.</a></p>
+<p class="p5tabtabtab">[S5] Yiannis Sakellaridis, <a href="https://arxiv.org/abs/2111.03004">Spherical varieties, functoriality, and quantization.</a></p>
+<p class="p5tabtabtab">[C] Eric Chen, <a href="https://dataspace.princeton.edu/handle/88435/dsp01x346d7432">Derived Structures in the Duality of Automorphic Periods.</a></p>
+<p class="p5tabtabtab">[GW1] Wee Teck Gan, Bryan Wang Peng Jun, <a href="https://arxiv.org/abs/2309.08874">Generalised Whittaker models as instances of relative Langlands duality.</a></p>
+<p class="p5tabtabtab">[GW2] Wee Teck Gan, Bryan Wang Peng Jun, <a href="https://arxiv.org/abs/2401.06624">Generalised Whittaker models as instances of relative Langlands duality II.</a></p>
+</div>
+</body>
+</html>

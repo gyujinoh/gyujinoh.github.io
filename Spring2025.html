@@ -1,0 +1,513 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54X2G0K93V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-54X2G0K93V');
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type='text/javascript'>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+  <title>Algebraic Number Theory - Spring 2025, Gyujin Oh</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  body{
+  padding: 1em;
+}
+.page{
+  max-width: 60em;
+  margin: 0 auto;
+}
+table th,
+table td{
+  text-align: left;
+}
+table.layout{
+  width: 100%;
+  border-collapse: collapse;
+        font: LAT;
+}
+table.display{
+  margin: 1em 0;
+        font: LAT;
+}
+table.display th,
+table.display td{
+  border: 1px solid #B3BFAA;
+  padding: .5em 1em;
+        font: LAT;
+}
+
+table.display th{ background: #B2DDF9; }
+table.display td{ background: #fff; }
+
+
+table.responsive-table2{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 30em){
+    table.responsive-table2{
+      box-shadow: none;  
+        font: LAT;
+    }
+    table.responsive-table2 thead{
+      display: none; 
+        font: LAT;
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+        font: LAT;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+        font: LAT;
+    content: 'Date';
+  }
+  table.responsive-table td:nth-child(2):before{
+        font: LAT;
+    content: 'Topic';
+  }
+  table.responsive-table td:nth-child(3):before{
+        font: LAT;
+    content: 'Textbook';
+  }
+  table.responsive-table td:nth-child(4):before{
+        font: LAT;
+    content: 'Note';
+  }
+  table.responsive-table2 td:nth-child(1),
+  table.responsive-table2 td:nth-child(2),
+  table.responsive-table2 td:nth-child(3),
+  table.responsive-table2 td:nth-child(4){
+        font: LAT;
+    padding-left: 25%;
+  }
+  table.responsive-table2 td:nth-child(1):before,
+  table.responsive-table2 td:nth-child(2):before,
+  table.responsive-table2 td:nth-child(3):before,
+  table.responsive-table2 td:nth-child(4):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+        font: LAT;
+  }
+  
+    table.responsive-table2 tr,
+    table.responsive-table2 td{
+        display: block;
+        font: LAT;
+    }
+    table.responsive-table2 tr{
+        position: relative;
+        margin-bottom: 1em;
+        font: LAT;
+    box-shadow: 0 1px 10px #B2DDF9;
+    }
+    table.responsive-table2 td{
+        border-top: none;
+        font: LAT;
+    }
+    table.responsive-table2 td.organisationnumber2{
+        background: #B2DDF9;
+        border-top: 1px solid #B3BFAA;
+    }
+    table.responsive-table2 td.actions2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+table.responsive-table{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 30em){
+    table.responsive-table{
+      box-shadow: none;  
+        font: LAT;
+    }
+    table.responsive-table thead{
+      display: none; 
+        font: LAT;
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+        font: LAT;
+  }
+    
+  table.responsive-table2 td:nth-child(1):before{
+        font: LAT;
+    content: 'Assignment';
+  }
+  table.responsive-table2 td:nth-child(2):before{
+        font: LAT;
+    content: 'Due';
+  }
+  table.responsive-table2 td:nth-child(3):before{
+        font: LAT;
+    content: 'Due';
+  }
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2),
+  table.responsive-table td:nth-child(3),
+  table.responsive-table td:nth-child(4){
+        font: LAT;
+    padding-left: 25%;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before,
+  table.responsive-table td:nth-child(3):before,
+  table.responsive-table td:nth-child(4):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+        font: LAT;
+  }
+  
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+        font: LAT;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+        font: LAT;
+    box-shadow: 0 1px 10px #B2DDF9;
+    }
+    table.responsive-table td{
+        border-top: none;
+        font: LAT;
+    }
+    table.responsive-table td.organisationnumber{
+        background: #B2DDF9;
+        border-top: 1px solid #B3BFAA;
+    }
+    table.responsive-table td.actions{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+    #block_container{
+    	display: flex;
+    	justify-content: left;
+    }
+    @font-face{
+	font-family: 'BV';
+	src: url('LibreBaskerville-Regular.woff') format('woff'),
+	url('LibreBaskerville-Regular.ttf') format('truetype');
+    }
+    @font-face{
+	font-family: 'LAT';
+	src: url('Lato-Regular.woff') format('woff'),
+	url('Lato-Regular.ttf') format('truetype');
+    }
+    @font-face{
+	font-family: 'LATBold';
+	src: url('Lato-Bold.woff') format('woff'),
+	url('Lato-Bold.ttf') format('truetype');
+    }
+    .container{overflow-wrap: break-word; word-break: break-all;
+    }
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 36.0px BV; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; hyphens: manual; white-space:normal}
+    p.p2tab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p20tabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p20tab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p2tab.bold {font: LATBold;}
+    p.p2tab2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2tab23 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2tab3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:60px; hyphens: manual; white-space:normal}
+    p.p20tab2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; white-space:nowrap}
+    p.p20Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; white-space:nowrap; margin-left:20px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 21.6px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p3w {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 21.6px LAT; color: white; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.6px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p50 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 5.0px; font: 1px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 5.0px}
+    p.p2Boldtab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LATBold; color: #000000; -webkit-text-stroke: #000000; margin-left: 20.0px; min-height: 14.0px; white-space:nowrap}
+    p.p5tab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:20px; margin-top:7px}
+    p.p5tabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:27px; margin-top:7px}
+    p.p5tabtabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:48px; margin-top:7px}
+    p.p5Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5B {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 18.0px BV; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 19.8px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    
+    div{
+    overflow-wrap:break-word;
+    hyphens:manual;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container"><br><br>
+<p class="p1">Algebraic Number Theory (Mathematics GR6657)</p>
+<br>
+<div id="block_container"><p class="p2Bold">Instructor</p>
+<p class="p2tab"><a href="index.html">Gyujin Oh</a> (gyujinoh@math.columbia.edu)</p></div>
+<div id="block_container"><p class="p2Bold">Webpage</p>
+<p class="p2tab"><a href="https://math.columbia.edu/~gyujinoh/Spring2025.html">https://math.columbia.edu/~gyujinoh/Spring2025.html</a>, and <a href="https://courseworks.columbia.edu">Courseworks</a>.</p></div><p class="p2Bold">Time and location</p>
+<p class="p5tab"> <b>MW 11:40AM-12:55PM</b>, Location <b>507 Mathematics.</b></p>
+<p class="p5tab"> <a href="https://columbiauniversity.zoom.us/j/99541459424?pwd=dlcxV0FNcFlzNXJnaFdNdlBYRHozUT09">Zoom link</a>.</p>
+<p class="p2Bold">Teaching assistant</p><p class="p50"></p>
+<p class="p5tab">Vidhu Adhihetty</p>
+<p class="p2Bold">Office hours</p>
+<p class="p5tab">Tuesdays 1-2PM</p>
+<br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><p class="p3w">Syllabus</p></button>
+<div id="demo" class="collapse in"> <div style="line-height:60%;">
+<br>
+</div>
+<p class="p2Boldtab">Topics</p><p class="p5tabtab">The main objective of this course is to learn about local and global class field theory. We will review necessary backgrounds (e.g. basic algebraic and analytic number theory, homological algebra) and then move on to learn about the statements and the proofs of the local and global class field theory. Time permitting we will also touch upon other related topics (e.g. function fields, elliptic curves with complex multiplication, Langlands program, Iwasawa theory).</p>
+<p class="p2Boldtab">Prerequisites</p><p class="p5tabtab">We will assume the knowledge of basic commutative algebra (e.g. GR6261). </p>
+<p class="p2Boldtab">References</p><p class="p5tabtab">[ANT] <a href="Spring2025/ANT.pdf">Lecture notes from my course on undergraduate Algebraic Number Theory (GU4043) in Spring 2024</a>.</p><p class="p5tabtab">[ANT2] <a href="Spring2025/ANT2.pdf">Current lecture notes</a>.</p>
+<p class="p5tabtab">[AT] Artin--Tate, <i>Class Field Theory</i>.</p>
+<p class="p5tabtab">[CF] Cassels--Frohlich.</p>
+<p class="p5tabtab">[Cox] Cox, <i>Primes of the form x^2+ny^2</i>.</p>
+<p class="p5tabtab">[Mil] Milne, <i>Class Field Theory</i>.</p>
+<p class="p5tabtab">[Poo] Poonen's <a href="https://math.mit.edu/~poonen/786/notes.pdf">notes on Tate's thesis</a>.</p>
+<p class="p5tabtab">[Se1] Serre, <i>Local Fields</i>.</p>
+<p class="p5tabtab">[Se2] Serre, <i>Algebraic Groups and Class Fields</i>.</p>
+<p class="p5tabtab">[Tat] Tate, <i>Number theoretic background</i>, in <i>Automorphic Forms, Representations, and L-functions, Part 2</i> (commonly known as the "Corvallis Proceedings").</p>
+<p class="p2Boldtab">Grading</p><p class="p5tabtab">There will be a take-home final exam. Other grading components will be determined after I know how large the class will be.</p>
+
+</div><div style="line-height:60%;">
+<br>
+<br>
+</div>
+<p>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3"><p class="p3w">Notes and Schedule</p></button>
+<div id="demo3" class="collapse in"> 
+<p class="p5"></p>
+<table class="layout display responsive-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+	    <th>Topic</th>
+            <th>Title</th>
+            <th>Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        <tr>
+            <td class="organisationnumber">1/22 (W)</td>
+	    <td class="organisationname" rowspan="4">Basic number theory</td>
+            <td class="organisationname">Number fields, I</td>
+            <td class="organisationname">[ANT, Lectures 2~10]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">1/27 (M)</td>
+            <td class="organisationname">Number fields, II</td>
+            <td class="organisationname">[ANT, Lectures 11~15]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">1/29 (W)</td>
+            <td class="organisationname">Local fields, I</td>
+            <td class="organisationname">[ANT, Lectures 16~18]
+            </td>
+        </tr>
+        <tr>
+            <td class="organisationnumber">2/3 (M)</td>
+            <td class="organisationname">Local fields, II</td>
+            <td class="organisationname">[ANT, Lectures 17~18], [ANT2, §1], [CF, I]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/5 (W)</td>
+	    <td class="organisationname" rowspan="1">Class field theory</td>
+            <td class="organisationname">Statements of the local class field theory</td>
+            <td class="organisationname">[ANT, Lecture 19], [ANT2, §2], [CF, VI.4]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/10 (M)</td>
+	    <td class="organisationname" rowspan="4">Group cohomology</td>
+            <td class="organisationname">Cohomology of groups</td>
+            <td class="organisationname">[ANT2, §3~4], [CF, IV], [Mil, II]
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/12 (W)</td>
+            <td class="organisationname">Galois cohomology</td>
+            <td class="organisationname">[ANT2, §3~4], [CF, IV, V, VI.1]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/17 (M)</td>
+            <td class="organisationname">Class field theory package</td>
+            <td class="organisationname">[ANT2, §5], [AT, Chapter 14], [Tat] 
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/19 (W)</td>
+            <td class="organisationname">Adeles</td>
+            <td class="organisationname">[ANT2, §6], [CF, II]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/24 (M)</td>
+	    <td class="organisationname" rowspan="8">Class field theory</td>
+            <td class="organisationname">Statements of the global class field theory</td>
+            <td class="organisationname">[ANT, Lectures 20~21], [ANT2, §7], [CF, VII], [Mil, V]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/26 (W)</td>
+            <td class="organisationname">Kronecker--Weber theorems</td>
+            <td class="organisationname">[ANT2, §8]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/3 (M)</td>
+            <td class="organisationname">Proof of the local class field theory</td>
+            <td class="organisationname">[ANT2, §9], [CF, VI], [Mil, III]
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/5 (W)</td>
+            <td class="organisationname">Lubin--Tate theory</td>
+            <td class="organisationname">[ANT2, §10], [CF, VI.3], [Mil, I]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/10 (M)</td>
+            <td class="organisationname">L-functions, Analytic class number formula</td>
+            <td class="organisationname">[ANT2, §11], [CF, VIII]
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/12 (W)</td>
+            <td class="organisationname">Proof of the global class field theory, I: Second Inequality</td>
+            <td class="organisationname">[ANT2, §12], [AT, Chapters 7, 14], [CF, VII], [Mil, VII]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/24 (M)</td>
+            <td class="organisationname">Proof of the global class field theory, II: First Inequality</td>
+            <td class="organisationname">[ANT2, §12], [AT, Chapters 7, 14], [CF, VII], [Mil, VII]
+            </td>
+        </tr>
+
+        <tr>
+            <td class="organisationnumber">3/26 (W)</td>
+            <td class="organisationname">Proof of the global class field theory, III: Brauer groups</td>
+            <td class="organisationname">[ANT2, §12], [AT, Chapters 7, 14], [CF, VII], [Mil, VII]
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/31 (M)</td>
+	    <td class="organisationname" rowspan="4">Theory of Complex Multiplication</td>
+            <td class="organisationname">Lattices (i.e. complex elliptic curves)</td>
+            <td class="organisationname">[ANT2, §13], [Cox, §10~11]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/2 (W)</td>
+            <td class="organisationname">Modular functions for SL_2(Z)</td>
+            <td class="organisationname">[ANT2, §13~14], [Cox, §7, 10~14]
+            </td>
+        
+        <tr>
+            <td class="organisationnumber">4/7 (M)</td>
+            <td class="organisationname">Modular functions for Γ_0(N)</td>
+            <td class="organisationname">[ANT2, §14~15], [Cox, §10~14]</td>
+        </tr>
+
+        
+        <tr>
+            <td class="organisationnumber">4/9 (W)</td>
+            <td class="organisationname">First and Second Main Theorems of Complex Multiplication</td>
+            <td class="organisationname">[ANT2, §14~15], [Cox, §10~14]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/14 (M)</td>
+	    <td class="organisationname" rowspan="3">Tate's Thesis</td>
+            <td class="organisationname">Fourier analysis over locally compact abelian groups</td>
+            <td class="organisationname">[CF, XV], [Poo]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/16 (W)</td>
+            <td class="organisationname">Local L-factors and local zeta integrals</td>
+            <td class="organisationname">[CF, XV], [Poo]
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/21 (M)</td>
+            <td class="organisationname">Hecke L-functions and global zeta integrals</td>
+            <td class="organisationname">[CF, XV], [Poo]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/23 (W)</td>
+	    <td class="organisationname" rowspan="4">Langlands program for GL(1)</td>
+            <td class="organisationname">Local Langlands correspondence</td>
+            <td class="organisationname">[ANT2, §16]
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/28 (M)</td>
+            <td class="organisationname">Automorphic forms and representations</td>
+            <td class="organisationname">[ANT2, §17]</td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/30 (W)</td>
+            <td class="organisationname">Global Langlands correspondence, Galois deformations</td>
+            <td class="organisationname">[ANT2, §18]
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">5/5 (M)</td>
+            <td class="organisationname">Modularity lifting theorems</td>
+            <td class="organisationname">[ANT2, §19]</td>
+        </tr>
+
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>

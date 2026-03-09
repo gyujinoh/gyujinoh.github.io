@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54X2G0K93V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-54X2G0K93V');
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type='text/javascript'>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+  <title>Algebraic Number Theory - Spring 2024, Gyujin Oh</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  body{
+  padding: 1em;
+}
+.page{
+  max-width: 60em;
+  margin: 0 auto;
+}
+table th,
+table td{
+  text-align: left;
+}
+table.layout{
+  width: 100%;
+  border-collapse: collapse;
+        font: LAT;
+}
+table.display{
+  margin: 1em 0;
+        font: LAT;
+}
+table.display th,
+table.display td{
+  border: 1px solid #B3BFAA;
+  padding: .5em 1em;
+        font: LAT;
+}
+
+table.display th{ background: #B2DDF9; }
+table.display td{ background: #fff; }
+
+
+table.responsive-table2{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 30em){
+    table.responsive-table2{
+      box-shadow: none;  
+        font: LAT;
+    }
+    table.responsive-table2 thead{
+      display: none; 
+        font: LAT;
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+        font: LAT;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+        font: LAT;
+    content: 'Date';
+  }
+  table.responsive-table td:nth-child(2):before{
+        font: LAT;
+    content: 'Topic';
+  }
+  table.responsive-table td:nth-child(3):before{
+        font: LAT;
+    content: 'Textbook';
+  }
+  table.responsive-table td:nth-child(4):before{
+        font: LAT;
+    content: 'Note';
+  }
+  table.responsive-table2 td:nth-child(1),
+  table.responsive-table2 td:nth-child(2),
+  table.responsive-table2 td:nth-child(3),
+  table.responsive-table2 td:nth-child(4){
+        font: LAT;
+    padding-left: 25%;
+  }
+  table.responsive-table2 td:nth-child(1):before,
+  table.responsive-table2 td:nth-child(2):before,
+  table.responsive-table2 td:nth-child(3):before,
+  table.responsive-table2 td:nth-child(4):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+        font: LAT;
+  }
+  
+    table.responsive-table2 tr,
+    table.responsive-table2 td{
+        display: block;
+        font: LAT;
+    }
+    table.responsive-table2 tr{
+        position: relative;
+        margin-bottom: 1em;
+        font: LAT;
+    box-shadow: 0 1px 10px #B2DDF9;
+    }
+    table.responsive-table2 td{
+        border-top: none;
+        font: LAT;
+    }
+    table.responsive-table2 td.organisationnumber2{
+        background: #B2DDF9;
+        border-top: 1px solid #B3BFAA;
+    }
+    table.responsive-table2 td.actions2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+table.responsive-table{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 30em){
+    table.responsive-table{
+      box-shadow: none;  
+        font: LAT;
+    }
+    table.responsive-table thead{
+      display: none; 
+        font: LAT;
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+        font: LAT;
+  }
+    
+  table.responsive-table2 td:nth-child(1):before{
+        font: LAT;
+    content: 'Assignment';
+  }
+  table.responsive-table2 td:nth-child(2):before{
+        font: LAT;
+    content: 'Due';
+  }
+  table.responsive-table2 td:nth-child(3):before{
+        font: LAT;
+    content: 'Due';
+  }
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2),
+  table.responsive-table td:nth-child(3),
+  table.responsive-table td:nth-child(4){
+        font: LAT;
+    padding-left: 25%;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before,
+  table.responsive-table td:nth-child(3):before,
+  table.responsive-table td:nth-child(4):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+        font: LAT;
+  }
+  
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+        font: LAT;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+        font: LAT;
+    box-shadow: 0 1px 10px #B2DDF9;
+    }
+    table.responsive-table td{
+        border-top: none;
+        font: LAT;
+    }
+    table.responsive-table td.organisationnumber{
+        background: #B2DDF9;
+        border-top: 1px solid #B3BFAA;
+    }
+    table.responsive-table td.actions{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+    #block_container{
+    	display: flex;
+    	justify-content: left;
+    }
+    @font-face{
+	font-family: 'BV';
+	src: url('LibreBaskerville-Regular.woff') format('woff'),
+	url('LibreBaskerville-Regular.ttf') format('truetype');
+    }
+    @font-face{
+	font-family: 'LAT';
+	src: url('Lato-Regular.woff') format('woff'),
+	url('Lato-Regular.ttf') format('truetype');
+    }
+    @font-face{
+	font-family: 'LATBold';
+	src: url('Lato-Bold.woff') format('woff'),
+	url('Lato-Bold.ttf') format('truetype');
+    }
+    .container{overflow-wrap: break-word; word-break: break-all;
+    }
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 36.0px BV; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; hyphens: manual; white-space:normal}
+    p.p2tab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p20tabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p20tab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:20px; hyphens: manual; white-space:normal}
+    p.p2tab.bold {font: LATBold;}
+    p.p2tab2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2tab23 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2tab3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:60px; hyphens: manual; white-space:normal}
+    p.p20tab2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; overflow-wrap: break-word; margin-left:40px; hyphens: manual; white-space:normal}
+    p.p2Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; white-space:nowrap}
+    p.p20Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px; white-space:nowrap; margin-left:20px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 21.6px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p3w {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 21.6px LAT; color: white; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.6px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p50 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 5.0px; font: 1px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 5.0px}
+    p.p2Boldtab {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 16.2px LATBold; color: #000000; -webkit-text-stroke: #000000; margin-left: 20.0px; min-height: 14.0px; white-space:nowrap}
+    p.p5tab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:20px; margin-top:7px}
+    p.p5tabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:27px; margin-top:7px}
+    p.p5tabtabtab {margin: 0.0px 0.0px 7.0px 7.0px; line-height: 14.4px; font: 14.4px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.4px; margin-left:48px; margin-top:7px}
+    p.p5Bold {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 14.4px LATBold; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5B {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 18.0px BV; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 19.8px LAT; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    
+    div{
+    overflow-wrap:break-word;
+    hyphens:manual;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container"><br><br>
+<p class="p1">Algebraic Number Theory (Mathematics GU4043)</p>
+<br>
+<div id="block_container"><p class="p2Bold">Instructor</p>
+<p class="p2tab"><a href="index.html">Gyujin Oh</a> (gyujinoh@math.columbia.edu)</p></div>
+<div id="block_container"><p class="p2Bold">Webpage</p>
+<p class="p2tab"><a href="https://math.columbia.edu/~gyujinoh/Spring2024.html">https://math.columbia.edu/~gyujinoh/Spring2024.html</a>, and <a href="https://courseworks.columbia.edu">Courseworks</a>.</p></div><p class="p2Bold">Time and location</p>
+<p class="p5tab"> <b>TTh 4:10-5:25PM</b>, Location <b>307 Mathematics.</b></p>
+<p class="p2Bold">Teaching assistant</p><p class="p50"></p>
+<p class="p5tab">Matthew Hase-Liu (mh4198@columbia.edu)</p>
+<p class="p2Bold">Office hours</p>
+<p class="p5tab">Gyujin: Tuesdays 2-3PM, at 517 Mathematics</p><p class="p5tab">Matthew: Tuesdays 9-10AM, Wednesdays 9-10AM, Fridays 10-11AM, at 406 Mathematics</p><p class="p50"></p>
+<br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"><p class="p3w">Syllabus</p></button>
+<div id="demo" class="collapse in"> <div style="line-height:60%;">
+<br>
+</div>
+<p class="p2Boldtab">Prerequisites</p><p class="p5tabtab">Both MATH GU4041 and MATH GU4042, or the equivalent. </p><p class="p5tabtab">This includes: Groups, homomorphisms, normal subgroups, the isomorphism theorems, symmetric groups, group actions, the Sylow theorems, finitely generated abelian groups, rings, homomorphisms, ideals, integral and Euclidean domains, the division algorithm, principal ideal and unique factorization domains, fields, algebraic and transcendental extensions, splitting fields, finite fields, Galois theory.</p><p class="p5tabtab">I advise anyone who did not take Modern Algebra I and II against from taking this course or, at least, to self-teach yourself the materials before the start of the semester.</p>
+<p class="p2Boldtab">What this course is about</p><p class="p5tabtab">The primary source will be my lecture notes, which can be found <a href="Spring2024/ANT.pdf">here</a>.</p>
+<p class="p5tabtab">We first aim to develop the basics of algebraic number theory. While doing so, we try to tie into the classical developments of number theory. After that, we focus more on exposing ourselves to modern developments of number theory.</p>
+<p class="p5tabtab">There are various sources for further reference: </p>
+<p class="p5tabtabtab">Pierre Samuel, <i>Algebraic Theory of Numbers</i>;</p>
+<p class="p5tabtabtab"> <a href="https://people.math.harvard.edu/~landesman/assets/undergraduate-number-theory.pdf">Lecture notes of a course taught by Brian Conrad</a>;</p>
+<p class="p5tabtabtab"> James Milne, <a href="https://www.jmilne.org/math/CourseNotes/ANT.pdf">Algebraic Number Theory</a>;</p>
+<p class="p5tabtabtab"> Hermann Weyl, <i>Algebraic Theory of Numbers</i> (written in old language - still a classic);
+<p class="p5tabtabtab"> Daniel Marcus, <i>Number Fields</i>;</p>
+<p class="p5tabtabtab"> <a href="http://www.math.columbia.edu/~harris/W4043/notes1.pdf">Lecture notes of a course taught by Michael Harris</a>.</p>
+<p class="p5tabtab">References for some of the more advanced topics (which may or may not be dealt later in the course): </p>
+<p class="p5tabtabtab"> Gerald Janusz, <i>Algebraic Number Fields</i>;</p>
+<p class="p5tabtabtab"> Chapters 1~6 of Lawrence Washington, <i>Introduction to Cyclotomic Fields</i>;
+<p class="p5tabtabtab"> <a href="https://math.berkeley.edu/~fengt/245C_2016.pdf">Lecture notes of a course taught by Akshay Venkatesh</a> (on geometry of numbers).</p>
+<p class="p2Boldtab">Grading</p><p class="p5tabtab">There will be weekly homework assignments (50%), in-class midterm (20%), and a take-home final exam (30%).</p>
+<p class="p2Boldtab">Topics</p><p class="p5tabtab">Basic commutative algebra, Number fields, Ring of integers, Finiteness of class number, Dirichlet's unit theorem, Ramification, Local fields, Cyclotomic fields, Statements of local and global class field theory, Dirichlet $L$-functions, Analytic class number formula, Binary quadratic forms.
+</div><div style="line-height:60%;">
+<br>
+<br>
+</div>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo33"><p class="p3w">Homework</p></button>
+<div id="demo33" class="collapse in"> <div style="line-height:60%;">
+<br>
+</div>
+<table class="layout display responsive-table2">
+    <thead>
+        <tr>
+            <th>Assignment</th>
+            <th>Due</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW1.pdf">HW 1</a></td>
+            <td class="organisationname2">1/23 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW2.pdf">HW 2</a></td>
+            <td class="organisationname2">1/30 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW3.pdf">HW 3</a></td>
+            <td class="organisationname2">2/6 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW4.pdf">HW 4</a></td>
+            <td class="organisationname2">2/13 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW5.pdf">HW 5</a></td>
+            <td class="organisationname2">2/20 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW6.pdf">HW 6</a></td>
+            <td class="organisationname2">2/27 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW7.pdf">HW 7</a></td>
+            <td class="organisationname2">3/5 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW8.pdf">HW 8</a></td>
+            <td class="organisationname2">3/19 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW9.pdf">HW 9</a></td>
+            <td class="organisationname2">3/26 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW10.pdf">HW 10</a></td>
+            <td class="organisationname2">4/2 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW11.pdf">HW 11</a></td>
+            <td class="organisationname2">4/9 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW12.pdf">HW 12</a></td>
+            <td class="organisationname2">4/16 at 11:59PM</td>
+        </tr>
+        <tr>
+            <td class="organisationname2"><a href="Spring2024/HW13.pdf">HW 13</a></td>
+            <td class="organisationname2">4/23 at 11:59PM</td>
+        </tr>
+	<tr>
+            <td class="organisationname2"><a href="Spring2024/HW14.pdf">HW 14</a></td>
+            <td class="organisationname2">4/30 at 11:59PM</td>
+        </tr>
+    </tbody>
+</table>
+</div><div style="line-height:60%;">
+<br>
+<br>
+</div>
+<p>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3"><p class="p3w">Notes and Schedule</p></button>
+<div id="demo3" class="collapse in"> 
+<p class="p5"></p>
+<p class="p2">The main source of the materials for this course is <a href="Spring2024/ANT.pdf">this lecture note</a>.</p><p class="p5"></p>
+<table class="layout display responsive-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Further materials</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        <tr>
+            <td class="organisationnumber">1/16 (Tue)</td>
+            <td class="organisationname">Mordell's equations</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">1/18 (Thu)</td>
+            <td class="organisationname">Number fields and their rings of integers</td>
+            <td class="organisationname"><a href="https://virtualmath1.stanford.edu/~conrad/154Page/handouts/moduleintro.pdf">Primer on modules (Conrad)</a></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">1/23 (Tue)</td>
+            <td class="organisationname">Number fields and their rings of integers</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">1/25 (Thu)</td>
+            <td class="organisationname">Norms, traces, and discriminants</td>
+            <td class="organisationname"><a href="https://math.stanford.edu/~conrad/154Page/handouts/normtrace.pdf">Norm and trace (Conrad)</a>, <a href="https://sites.math.rutgers.edu/courses/552/552-sp13/resultants.pdf">Resultants and discriminants (Tunnell)</a>, <a href="https://pi.math.cornell.edu/~kbrown/6310/primitive.pdf">Primitive element theorem (Brown)</a></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">1/30 (Tue)</td>
+            <td class="organisationname">Finiteness of $\mathcal{O}_{K}$</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/1 (Thu)</td>
+            <td class="organisationname">Dedekind domains</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/6 (Tue)</td>
+            <td class="organisationname">Unique factorization of ideals</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/8 (Thu)</td>
+            <td class="organisationname">Splitting of rational primes</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/13 (Tue)</td>
+            <td class="organisationname">Splitting of rational primes</td>
+            <td class="organisationname"><a href="https://kconrad.math.uconn.edu/blurbs/gradnumthy/dedekind-index-thm.pdf">Dedekind's index theorem (Conrad)</a></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/15 (Thu)</td>
+            <td class="organisationname">Galois action on the splitting of primes; the Frobenius</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/20 (Tue)</td>
+            <td class="organisationname">Cyclotomic fields; the quadratic reciprocity law</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/22 (Thu)</td>
+            <td class="organisationname">Finiteness of class number; binary quadratic forms</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/27 (Tue)</td>
+            <td class="organisationname">Finiteness of class number; binary quadratic forms</td>
+            <td class="organisationname"><a href="https://www.kurims.kyoto-u.ac.jp/%7Ekyodo/kokyuroku/contents/pdf/0998-7.pdf">On semi-reduced quadratic forms, continued fractions and class number (Levesque)</a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">2/29 (Thu)</td>
+            <td class="organisationname">Midterm</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/5 (Tue)</td>
+            <td class="organisationname">Localization; discrete valuation rings</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/7 (Thu)</td>
+            <td class="organisationname">Relative splitting of primes</td>
+            <td class="organisationname"><a href="https://math.stanford.edu/~conrad/154Page/handouts/modPID.pdf">Modules over PID (Conrad)</a>, <a href="https://mattbaker.blog/2022/11/09/finitely-generated-modules-over-a-p-i-d/">Smith normal form (Baker)</a></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/19 (Tue)</td>
+            <td class="organisationname">Ramification and local fields</td>
+            <td class="organisationname"><a href="https://kconrad.math.uconn.edu/blurbs/gradnumthy/ostrowskiQ.pdf">Ostrowski's theorem (Conrad)</a>
+            </td>
+        
+        <tr>
+            <td class="organisationnumber">3/21 (Thu)</td>
+            <td class="organisationname">Ramification and local fields</td>
+            <td class="organisationname"></td>
+        </tr>
+
+        
+        <tr>
+            <td class="organisationnumber">3/26 (Tue)</td>
+            <td class="organisationname">Local fields and number fields</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">3/28 (Thu)</td>
+            <td class="organisationname">Local class field theory</td>
+            <td class="organisationname"><a href="https://ctnt-summer.math.uconn.edu/wp-content/uploads/sites/1632/2020/06/CTNT-InfGaloisTheory.pdf">Infinite Galois theory (Conrad)</a></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/2 (Tue)</td>
+            <td class="organisationname">Global class field theory; Hilbert class fields</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/4 (Thu)</td>
+            <td class="organisationname">Global class field theory; Hilbert class fields</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/9 (Tue)</td>
+            <td class="organisationname">Dirichlet's unit theorem</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/11 (Thu)</td>
+            <td class="organisationname">Dirichlet $L$-functions</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/16 (Tue)</td>
+            <td class="organisationname">Dirichlet $L$-functions</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/18 (Thu)</td>
+            <td class="organisationname">The analytic class number formula</td>
+            <td class="organisationname"></td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/23 (Tue)</td>
+            <td class="organisationname">Ideal class groups of the cyclotomic fields</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="organisationnumber">4/25 (Thu)</td>
+            <td class="organisationname">Artin reciprocity as an instance of the Langlands program</td>
+            <td class="organisationname">
+            </td>
+        </tr>
+
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>
